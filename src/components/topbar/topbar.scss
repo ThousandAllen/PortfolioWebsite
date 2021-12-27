@@ -2,7 +2,7 @@
 
 .topbar{
     width: 100%;
-    height: 70px;
+    height: 100px;
     background-color: $DarkBackgroundColor1;
     color: $LightTextColor1;
     position: fixed;
@@ -10,37 +10,95 @@
     z-index: 5;
     transition: all .25s ease;
     display: flex;
+    flex-direction: column;
 
     
 
     .top{
         display: flex;
+        width:100%;
+        height: 70%;
     
 
         .left{
             display: flex;
+            width: 300px;
+            height: 100%;
             
-            .imgContainer{
-                width: 80%;
-                height: 80%;
-                background-color: $DarkBackgroundColor1;
-                border-radius: 50%;
+            .logo{
+                width:275px;
+                height: 70px;
+                text-decoration: none;
                 display: flex;
-                align-items: flex-end;
-                justify-content: center;
-                float: right;
+                flex: 2;
+                flex-direction: row;
+                align-items:flex-end;
+                justify-content: start;
+                padding: 0 20px;
 
-                img{
-                    height:90%;
-
+                .imgContainer{
+                    width: 60px;
+                    height: 60px;
+                    background-color: $DarkBackgroundColor1;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items:center;
+                    justify-content: start;
+                    
+                    img{
+                        height:60px;
+                        width: 60px;
+                    }
                 }
-            }
-
-            .name{
-                color:inherit;
+    
+                .name{
+                    text-decoration: none;
+                    color:$LightTextColor1;
+                    align-items:center;
+                    font-size: 32px;
+                    padding: 5px 10px;
+                }
             }
         }
 
+        .center{
+            width: 50%;
+            display: flex;
+            flex:2;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+            font-size: 15px;
+            padding-top: 18px;
+
+            
+        }
+
+        .right{
+            width: 5%;
+            display: flex;
+            padding-right: 5px;
+            align-items: center;
+            justify-content: center;
+
+            .hamburger{
+                width: 32px;
+                height: 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                cursor: pointer;
+                cursor: hand;
+
+                span{
+                    width:100%;
+                    height: 3px;
+                    background-color: $LightTextColor1;
+                    transform-origin: left;
+                    transition: all 2s ease;
+                }
+            }
+        }
     }
 
 

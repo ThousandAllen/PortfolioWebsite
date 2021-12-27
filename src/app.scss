@@ -1,4 +1,24 @@
 .app{
-    height:100%;
+    height:100vh;
+    
+    
+    
 
+    .sections{
+        position: absolute;
+        top: 100px;
+        height: calc(100vh - 100px);
+        display: flex;
+        flex: 3;
+        width: 300vw;
+        scrollbar-width:100%;
+        &::-webkit-scrollbar{ //for other browsers
+            display: 100%;
+        }
+
+        > *{
+            height: calc(100vh - 100px);
+            
+        }
+    }
 }
