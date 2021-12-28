@@ -2,8 +2,8 @@ import "./resume.scss"
 
 export default function Resume() {
     return (
-        <div>
-            
+        <div  className="resume" id="resume">
+            gtgt
         </div>
     )
 }

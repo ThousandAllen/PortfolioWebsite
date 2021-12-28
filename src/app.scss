@@ -1,23 +1,55 @@
 .app{
     height:100vh;
-    
-    
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
     
 
-    .sections{
+    .arrow{
+        height: 50px;
         position: absolute;
+        cursor: pointer;
+        cursor: hand;
+
+        
+
+        &.left{
+            left:100px;
+            transform: rotate(180deg);
+        }
+
+        &.right{
+            right: 100px;
+        }
+    }
+
+    .sections{
+        
         top: 100px;
         height: calc(100vh - 100px);
         display: flex;
-        flex: 3;
-        width: 300vw;
-        scrollbar-width:100%;
+        justify-content:flex-start;
+        align-items: center;
+        flex: 0 0 100vw;
+        position: absolute;
+        left:0;
+
+        
+       
+        
+
+        transition: all 1s ease-out;
+
         &::-webkit-scrollbar{ //for other browsers
             display: 100%;
         }
 
         > *{
             height: calc(100vh - 100px);
+            width: 100vw;
+            transition: all .75s ease-out;
             
         }
     }

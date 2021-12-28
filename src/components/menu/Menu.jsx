@@ -1,24 +1,31 @@
 import "./menu.scss"
 
-export default function Menu({menuOpen, setMenuOpen}) {
+export default function Menu({menuOpen, setMenuOpen, currentSlide, setCurrentSlide}) {
+
+    const handleClick = (page)=>{
+        setMenuOpen(false);
+        setCurrentSlide(page);
+    }
+
+    
 
     return (
         <div className={"menu " + (menuOpen && "active")}>
             <ul>
-                <li onClick={()=>setMenuOpen(false)}>
-                    <a href="#aboutme">About Me</a>
+                <li onClick={()=>handleClick(0)}>
+                    About Me
                 </li>
-                <li onClick={()=>setMenuOpen(false)}>
-                    <a href="#projects">Projects</a>
+                <li onClick={()=>handleClick(1)} >
+                    Projects
                 </li>
-                <li onClick={()=>setMenuOpen(false)}>
-                    <a href="#resume">Resume</a>
+                <li onClick={()=>handleClick(2)}>
+                    Resume
                 </li>
-                <li onClick={()=>setMenuOpen(false)}>
-                    <a href="#contact">Contact</a>
+                <li onClick={()=>handleClick(3)}>
+                    Contact
                 </li>
-                <li onClick={()=>setMenuOpen(false)}>
-                    <a href="#contact">Contact</a>
+                <li onClick={()=>handleClick(4)}>
+                    Contact
                 </li>
             </ul>
         </div>
