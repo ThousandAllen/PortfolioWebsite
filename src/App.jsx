@@ -6,7 +6,7 @@ import Projects from "./components/projects/Projects";
 import Resume from "./components/resume/Resume";
 import Contact from "./components/contact/Contact";
 import {useState} from "react";
-import HorizontalScroll from 'react-scroll-horizontal';
+
 
 function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -32,8 +32,6 @@ function App() {
               <div><Contact/></div>
           
         </div>
-        <img src="assets/arrow.png" className = "arrow left" alt="" onClick={()=>handleClick("left")}/>
-        <img src="assets/arrow.png" className = "arrow right" alt="" onClick={()=>handleClick()}/>
     </div>
   );
 }
