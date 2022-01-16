@@ -1,0 +1,79 @@
+@import "../../../global.scss";
+
+.halloween{
+    background-color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 20px 20px 20px;
+    font-size: 100%;
+
+    .title{
+        
+    }
+
+    .show{
+        
+        
+
+        .showvideo{
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            
+        }
+        
+        .text{
+            padding-top: 50px;
+            padding-bottom: 50px;
+            width: 800px;
+            text-indent: 2em;
+        }
+    }
+
+    .demogorgon{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+        .imgContainer{
+
+            img{
+                text-align: center;
+                height: 400px;
+                width: 400px;
+                padding-bottom: 50px;
+            }
+        }
+
+        .text{
+            padding-bottom: 50px;
+            width: 800px;
+            text-align: left;
+            text-indent: 2em;
+        }
+    }
+
+    .line{
+        height: 3px;
+        width: 85%;
+        padding-bottom: 100px;
+        padding-top: 25px;
+        
+        span{
+            height: 3px !important;
+            width: 100% !important;
+            background-color: $DarkBackgroundColor4 !important;
+            display: block;
+        
+        }
+        
+    }
+    
+}
+
+
+

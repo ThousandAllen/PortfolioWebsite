@@ -1,32 +1,33 @@
 import "./projects.scss"
 import Popup from 'reactjs-popup'
 import 'reactjs-popup/dist/index.css'
+import PopUpProject from "../popupproject/PopUpProject";
 
 export default function Projects() {
     const PersonalProjects = [
         {
             title: "Halloween Light Show",
-            img: "assets/Projects/Halloween.jpg",
+            img: "assets/Projects/Halloween/Halloween.jpg",
             descr: "I created a 7-minute long, arduino-controlled, light show for Halloween themed to Stranger Things.",
-            link: "#Halloween",
+            link: "Halloween",
         },
         {
             title: "Small Unreal Engine Projects",
             img: "assets/Projects/Halloween.jpg",            
             descr: "To learn Unreal Engine, I have created several small projects to play around with different aspects of the game engine.",
-            link: "#UnrealProjects",
+            link: "UnrealProjects",
         },
         {
             title: "This Portfolio Website",
             img: "assets/Projects/Halloween.jpg",            
             descr: "I created this website using jsx and scss to learn how websites are programmed.",
-            link: "#Website",
+            link: "Website",
         },
         {
             title: "Dog - Unreal Engine Asset",
             img: "assets/Projects/Halloween.jpg",
             descr: "IN PROGRESS: I am creating my golden retriever as a fully animated/programmed dog in Blender / Unreal Engine.", 
-            link: "#DogAsset",
+            link: "DogAsset",
         },
     ];
 
@@ -37,19 +38,19 @@ export default function Projects() {
             title: "Game Development Club Game",
             img: "assets/Projects/Halloween.jpg",
             descr: "IN PROGRESS: I am creating my golden retriever as a fully animated/programmed dog in Blender / Unreal Engine.", 
-            link: "#DogAsset",
+            link: "DogAsset",
         },
         {
             title: "3D-Printted Humanoid Robot for Humanoid Robotics Club",
             img: "assets/Projects/Halloween.jpg",
             descr: "IN PROGRESS: I am creating my golden retriever as a fully animated/programmed dog in Blender / Unreal Engine.", 
-            link: "#DogAsset",
+            link: "DogAsset",
         },
         {
             title: "Metal Humanoid Robot for Thon-Bot Club",
             img: "assets/Projects/Halloween.jpg",
             descr: "IN PROGRESS: I am creating my golden retriever as a fully animated/programmed dog in Blender / Unreal Engine.", 
-            link: "#DogAsset",
+            link: "DogAsset",
         },
     ];
 
@@ -78,7 +79,7 @@ export default function Projects() {
                                         <p>{p.descr}</p>
                                     </div>
                                 </div> } modal nested> 
-                                poppy
+                                    <PopUpProject link={p.link}/>
                                 </Popup>
                             </div>
                         ))} 

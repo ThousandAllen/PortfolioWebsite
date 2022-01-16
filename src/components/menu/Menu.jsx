@@ -18,7 +18,7 @@ export default function Menu({menuOpen, setMenuOpen, currentSlide, setCurrentSli
                 <li onClick={()=>handleClick(1)} >
                     Projects
                 </li>
-                <li onClick={()=>handleClick(2)}>
+                {/*<li onClick={()=>handleClick(2)}>
                     Resume
                 </li>
                 <li onClick={()=>handleClick(3)}>
@@ -26,7 +26,7 @@ export default function Menu({menuOpen, setMenuOpen, currentSlide, setCurrentSli
                 </li>
                 <li onClick={()=>handleClick(4)}>
                     Contact
-                </li>
+    </li> */}
             </ul>
         </div>
     )
