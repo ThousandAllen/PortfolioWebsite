@@ -13,31 +13,42 @@
         
     }
 
-    .show{
-        
-        
-
-        .showvideo{
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            
-        }
-        
-        .text{
-            padding-top: 50px;
-            padding-bottom: 50px;
-            width: 800px;
-            text-indent: 2em;
-        }
-    }
-
-    .demogorgon{
+    .sectionwrapper{
         justify-content: center;
         align-items: center;
         text-align: center;
         display: flex;
         flex-direction: column;
+
+        .imgContainer{
+            
+
+            img{
+                text-align: center;
+                height: 400px;
+                width: 400px;
+                padding-bottom: 50px;
+            }
+        }
+
+        .showvideo{
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+        
+        .text{
+            
+            padding-bottom: 50px;
+            width: 800px;
+            text-indent: 2em;
+            text-align: left;
+        }
+    }
+    /*
+    .sectionwrapper{
+        
 
         .imgContainer{
 
@@ -55,7 +66,7 @@
             text-align: left;
             text-indent: 2em;
         }
-    }
+    } */
 
     .line{
         height: 3px;

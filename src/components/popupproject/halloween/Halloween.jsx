@@ -14,7 +14,7 @@ export default function Halloween() {
                 <span > </span>
             </div>
 
-            <div className="show">
+            <div className="sectionwrapper">
                 <div className="showvideo">
                     <Youtube videoId="XP6S27cT-gE"/>
                 </div>
@@ -42,7 +42,7 @@ export default function Halloween() {
                 <span > </span>
             </div>
             
-            <div className="demogorgon">
+            <div className="sectionwrapper">
                 <div className="imgContainer">
                     <img src="assets/Projects/Halloween/Demogorgon.gif" alt="" />
                 </div>
