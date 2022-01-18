@@ -1,5 +1,7 @@
 import Halloween from './halloween/Halloween'
 import UnrealProjects from './unrealprojects/UnrealProjects'
+import Dog from './dog/Dog'
+import Website from './website/Website'
 import './popupproject.scss'
 
 export default function PopUpProject({link}) {
@@ -9,6 +11,8 @@ export default function PopUpProject({link}) {
                 {
                     "Halloween": <Halloween/>,
                     "UnrealProjects": <UnrealProjects/>,
+                    "DogAsset": <Dog/>,
+                    "Website": <Website/>,
                 }[link] 
             }
 

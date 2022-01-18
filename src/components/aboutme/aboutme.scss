@@ -60,6 +60,10 @@
                     padding-bottom: 20px;
     
                 }
+
+                @include mobile{
+                    width: 100%;
+                }
             }
 
             .imgContainer{
@@ -70,6 +74,10 @@
                 display: flex;
                 align-items:center;
                 justify-content: start;
+
+                @include mobile{
+                    display: none; 
+                }
 
                 img{
                     height: 250px;
@@ -89,10 +97,19 @@
                 background-color: $DarkBackgroundColor2;
                 padding: 20px 20px 20px 20px;
 
+                @include mobile{
+                    width: calc(100% - 20px); 
+                }
+
                 .title{
                     padding-bottom: 20px;
                 }
 
+                p{
+                    width: 95%;
+                    justify-content: center;
+                    align-items: center;
+                }
             }
 
             
@@ -109,11 +126,22 @@
                 background-color: $DarkBackgroundColor2;
                 padding: 20px 20px 20px 20px;
 
+                @include mobile{
+                    width: calc(100% - 20px); 
+                }
+
                 .title{
                     padding-bottom: 20px;
                 }
 
+                p{
+                    width: 95%;
+                    justify-content: center;
+                    align-items: center;
+                }
+
                 .current{
+                    width: 95%;
 
                     ul{
                         list-style-type:square;
@@ -126,13 +154,15 @@
                 }
 
                 .past{
+                    width: 95%;
 
                     ul{
-                        list-style-type: square;
+                        list-style-type:square;
                         list-style-position: inside;
+
                         ul{
                             list-style-type: disc;
-                        };
+                        }
                     }
                 }
 
@@ -218,7 +248,8 @@
         width: 100vw;
         top: 100%;
         transform: translateY(-100%);
-    background-image:url('../../../public/assets/Stars.jpg');
+    //background-image:url('../../../public/assets/Stars.jpg');
+    background-color: $DarkBackgroundColor1;
     background-position: center;
     position: fixed;
     background-repeat: no-repeat;

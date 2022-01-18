@@ -25,8 +25,8 @@
 
             img{
                 text-align: center;
-                height: 400px;
-                width: 400px;
+                height: 300px;
+                width: undefined;
                 padding-bottom: 50px;
             }
         }
@@ -44,29 +44,22 @@
             width: 800px;
             text-indent: 2em;
             text-align: left;
-        }
-    }
-    /*
-    .sectionwrapper{
-        
 
-        .imgContainer{
-
-            img{
-                text-align: center;
-                height: 400px;
-                width: 400px;
-                padding-bottom: 50px;
+            ul{
+                list-style-type:square;
+                list-style-position: inside;
+                font-size: 80%;
+                padding-top: 10px;
+                li{
+                    padding-bottom: 5px;
+                }
+            }
+            a{
+                text-decoration-color: cyan;
+                color: cyan;
             }
         }
-
-        .text{
-            padding-bottom: 50px;
-            width: 800px;
-            text-align: left;
-            text-indent: 2em;
-        }
-    } */
+    }
 
     .line{
         height: 3px;

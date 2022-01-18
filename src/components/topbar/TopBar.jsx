@@ -29,9 +29,9 @@ export default function TopBar({menuOpen, setMenuOpen}) {
                 </div>
             </div>  
 
-            <div className="bottom">
+            {/*<div className="bottom">
                 Bottom
-            </div>           
+            </div>*/}           
         </div>
     )
 }

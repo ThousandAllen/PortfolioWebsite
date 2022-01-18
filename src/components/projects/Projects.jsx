@@ -2,6 +2,7 @@ import "./projects.scss"
 import Popup from 'reactjs-popup'
 import 'reactjs-popup/dist/index.css'
 import PopUpProject from "../popupproject/PopUpProject";
+import { SiReact } from "react-icons/si";
 
 export default function Projects() {
     const PersonalProjects = [
@@ -13,19 +14,19 @@ export default function Projects() {
         },
         {
             title: "Small Unreal Engine Projects",
-            img: "assets/Projects/Halloween.jpg",            
+            img: "assets/Projects/UE4/Forest.png",            
             descr: "To learn Unreal Engine, I have created several small projects to play around with different aspects of the game engine.",
             link: "UnrealProjects",
         },
         {
             title: "This Portfolio Website",
-            img: "assets/Projects/Halloween.jpg",            
+            img: "assets/Projects/React.png",            
             descr: "I created this website using jsx and scss to learn how websites are programmed.",
             link: "Website",
         },
         {
             title: "Dog - Unreal Engine Asset",
-            img: "assets/Projects/Halloween.jpg",
+            img: "assets/Projects/UE4/DogWithHair.png",
             descr: "IN PROGRESS: I am creating my golden retriever as a fully animated/programmed dog in Blender / Unreal Engine.", 
             link: "DogAsset",
         },
@@ -85,7 +86,7 @@ export default function Projects() {
                         ))} 
                     </div>
                 </div>
-                <div className="clubs">
+                {/*<div className="clubs">
                     <div className="sectionTitle">
                         <h1>Personal Projects</h1>
                     </div>
@@ -112,7 +113,7 @@ export default function Projects() {
                             </div>
                         ))}
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     )

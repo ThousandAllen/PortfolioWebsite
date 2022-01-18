@@ -11,7 +11,8 @@
     transition: all .25s ease;
     display: flex;
     flex-direction: column;
-
+    justify-content: center;
+    
     
 
     .top{
@@ -24,6 +25,10 @@
             display: flex;
             width: 300px;
             height: 100%;
+
+            @include mobile{
+                width: 105px; 
+            }
             
             .logo{
                 width:275px;
@@ -36,6 +41,7 @@
                 justify-content: start;
                 padding: 0 20px;
 
+
                 .imgContainer{
                     width: 60px;
                     height: 60px;
@@ -44,6 +50,10 @@
                     display: flex;
                     align-items:center;
                     justify-content: start;
+
+                    @include mobile{
+                        display: none; 
+                    }
                     
                     img{
                         height:60px;
@@ -57,6 +67,10 @@
                     align-items:center;
                     font-size: 32px;
                     padding: 5px 10px;
+
+                    @include mobile{
+                        font-size: 20px;
+                    }
                 }
             }
         }
@@ -71,6 +85,11 @@
             font-size: 15px;
             padding-top: 18px;
 
+            @include mobile{
+                font-size: 12px;
+                width: 30%;
+            }
+
             
         }
 
@@ -80,6 +99,9 @@
             padding-right: 5px;
             align-items: center;
             justify-content: center;
+            @include mobile{
+                width: 50px;
+            }
 
             .hamburger{
                 width: 32px;
