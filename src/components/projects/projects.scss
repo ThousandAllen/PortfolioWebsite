@@ -72,6 +72,8 @@
                         width: 90%;
                         height: 90%;
                         
+                        cursor: pointer;
+                        cursor: hand;
     
                         &:hover{
                             transform: scale(1.05);
@@ -159,3 +161,24 @@
     }
 }
 
+.buttonproject{
+    text-align: right;
+    
+    .buttonwrapper{
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+
+    .close{
+        font-size: 20px;
+        background-color: $DarkBackgroundColor1;
+        color:white;
+
+        cursor: pointer;
+        cursor: hand;
+        
+        
+
+        
+    }
+}

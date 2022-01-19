@@ -36,6 +36,10 @@
                 height: 300px;
                 width: undefined;
                 padding-bottom: 50px;
+
+                @include mobile{
+                    height: 200px !important;
+                }
             }
         }
 
