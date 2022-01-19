@@ -16,7 +16,7 @@ export default function Halloween() {
 
             <div className="sectionwrapper">
                 <div className="showvideo">
-                    <Youtube videoId="XP6S27cT-gE"/>
+                    <Youtube videoId="XP6S27cT-gE" className="youtube"/>
                 </div>
                 <div className="text">
                     <p>

@@ -5,6 +5,11 @@
     padding: 0px !important;
     width: 60% !important;
     border: 2px solid $DarkBackgroundColor3 !important;
+
+    @include mobile{
+        width: 100vw !important;
+    }
+
 }
 
 .popupproject{
@@ -14,5 +19,9 @@
     font-size: 18px;  
     text-align: left;  
     padding: 0px;
+
+    @include mobile{
+        width: 100vw !important;
+    }
     
 }

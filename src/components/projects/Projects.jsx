@@ -80,7 +80,13 @@ export default function Projects() {
                                         <p>{p.descr}</p>
                                     </div>
                                 </div> } modal nested> 
+                                    {close=>(<div>
+                                    <button onClick={close}>
+                                    &times;
+                                    </button>
+                                    
                                     <PopUpProject link={p.link}/>
+                                    </div>)}
                                 </Popup>
                             </div>
                         ))} 

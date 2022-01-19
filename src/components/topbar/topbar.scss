@@ -27,7 +27,7 @@
             height: 100%;
 
             @include mobile{
-                width: 105px; 
+                width: 85px; 
             }
             
             .logo{
@@ -40,6 +40,11 @@
                 align-items:flex-end;
                 justify-content: start;
                 padding: 0 20px;
+
+                @include mobile{
+                    padding: 0 5px; 
+                }
+
 
 
                 .imgContainer{

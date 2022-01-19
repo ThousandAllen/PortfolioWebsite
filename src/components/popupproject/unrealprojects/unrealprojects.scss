@@ -9,6 +9,12 @@
     padding: 40px 20px 20px 20px;
     font-size: 100%;
 
+    @include mobile{
+        font-size: 75% !important;
+    }
+
+    
+
     .title{
         
     }
@@ -19,6 +25,8 @@
         text-align: center;
         display: flex;
         flex-direction: column;
+
+        
 
         .imgContainer{
             
@@ -36,14 +44,25 @@
             justify-content: center;
             text-align: center;
             padding-bottom: 50px;
+
+            .youtube{
+                @include mobile{
+                    width: 100% !important;
+                }
+            }
+            
         }
         
         .text{
             
             padding-bottom: 50px;
-            width: 800px;
+            width: 50vw;
             text-indent: 2em;
             text-align: left;
+
+            @include mobile{
+                width: 90vw !important;
+            }
 
             ul{
                 list-style-type:square;

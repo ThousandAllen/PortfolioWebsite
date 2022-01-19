@@ -6,16 +6,20 @@ import './popupproject.scss'
 
 export default function PopUpProject({link}) {
     return (
-        <div className="popupproject">
-            {
-                {
-                    "Halloween": <Halloween/>,
-                    "UnrealProjects": <UnrealProjects/>,
-                    "DogAsset": <Dog/>,
-                    "Website": <Website/>,
-                }[link] 
-            }
-
+        <div>
+            <div className="popupproject">
+            
+                    <div>
+                        {
+                            {
+                                "Halloween": <Halloween/>,
+                                "UnrealProjects": <UnrealProjects/>,
+                                "DogAsset": <Dog/>,
+                                "Website": <Website/>,
+                            }[link] 
+                        }
+                    </div>
+            </div>
         </div>
     )
 }
