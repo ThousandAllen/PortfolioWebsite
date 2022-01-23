@@ -21,7 +21,7 @@ export default function UnrealProjects() {
                         Other projects I created were never intended to be games, as their only purpose was to help me learn how to program in Unreal Engine or learn the basics to art in Unreal Engine. 
                     </p>
                     <p>
-                        The photo above is a forest I made, attempting to learn the artistic side of Unreal Engine 4 and 5.
+                        The photo below is a forest I made, attempting to learn the artistic side of Unreal Engine 4 and 5.
                         The assets were already created, in the free Megascans library. 
                         The purpose of this projects was to learn how to put scenes together, learning how to use lighting, atmosphere effects, post processing to my advantage.
                         There are some other small scenes I created in other projects to learn different aspects of Unreal Engine, such as procedural foliage spawners, terrain using real geographic data (using BlenderGIS), splines, and more.

@@ -43,7 +43,7 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding-bottom: 50px;
+            padding-bottom: 25px;
 
             .youtube{
                 @include mobile{
@@ -59,6 +59,10 @@
             width: 50vw;
             text-indent: 2em;
             text-align: left;
+
+            p{
+                padding-bottom: 10px;
+            }
 
             @include mobile{
                 width: 90vw !important;
