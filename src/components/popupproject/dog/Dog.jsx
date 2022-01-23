@@ -16,9 +16,7 @@ export default function Dog() {
             </div>
 
             <div className="sectionwrapper">
-                <div className="imgContainer">
-                    <img src="assets/Projects/UE4/Dog_Rig.png" alt="" style ={{aspectRatio:2}}/>
-                </div>
+                
                 <div className="text">
                     <p>
                         I am currently working on creating my golden retriever in Unreal Engine 4.
@@ -32,6 +30,9 @@ export default function Dog() {
                             <li>Many more minor problems that most were more easily fixable, such as issues with scaling, incorrect animation times, and other general export/import problems.</li>
                         </ul>
                     </p>
+                </div>
+                <div className="imgContainer">
+                    <img src="assets/Projects/UE4/Dog_Rig.png" alt="" style ={{aspectRatio:2}}/>
                 </div>
                 
             </div>
@@ -66,6 +67,10 @@ export default function Dog() {
                         The eyes were created using the photorealistic character's eye material, with the model recreated, textures recreated, and parts of the blueprint rewritten to better match a dog's eye.
                         Before this project is done, I will need to fix the hair cards, update the hair card texture, fix the mouth/teeth, create audio, create more animations, and create the animation and character blueprints. 
                     </p>
+                </div>
+
+                <div className="line">
+                <span > </span>
                 </div>
                 
             </div>

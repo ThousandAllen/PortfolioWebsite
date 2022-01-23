@@ -13,7 +13,7 @@ export default function Projects() {
             link: "Halloween",
         },
         {
-            title: "Small Unreal Engine Projects",
+            title: "Unreal Engine and Blender Projects",
             img: "assets/Projects/UE4/Forest.png",            
             descr: "To learn Unreal Engine, I have created several small projects to play around with different aspects of the game engine.",
             link: "UnrealProjects",

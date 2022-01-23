@@ -13,9 +13,7 @@ export default function UnrealProjects() {
             </div>
 
             <div className="sectionwrapper">
-                <div className="imgContainer">
-                    <img src="assets/Projects/UE4/Forest.png" alt="" />
-                </div>
+            
                 <div className="text">
                     <p>
                         To learn Unreal Engine 4 and blender, I created several small projects.
@@ -29,6 +27,11 @@ export default function UnrealProjects() {
                         There are some other small scenes I created in other projects to learn different aspects of Unreal Engine, such as procedural foliage spawners, terrain using real geographic data (using BlenderGIS), splines, and more.
                     </p>
                 </div>   
+
+                <div className="imgContainer">
+                    <img src="assets/Projects/UE4/Forest.png" alt="" />
+                </div>
+
             </div>
             <div className="line">
                 <span > </span>
