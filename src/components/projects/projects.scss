@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .projects{
-    height: calc(100vh - 100px);
+    height: 1800px; //calc(100vh - 100px);
     width: 100%;
     background-color: $DarkBackgroundColor1;
     color: $LightTextColor1;
@@ -18,26 +18,21 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        flex: 2;
-        justify-content: center;
-        align-items: center;
-
-        .personal{
-            display: flex;
-            flex: 2;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 600px;
+        flex: 3;
+        justify-content: space-evenly;
+     
+        //align-items: center;         
+        
+        
+        
 
             .sectionTitle{
                 
                 @include mobile{
-                    height: 30px;
+                    height: 10px;
                     font-size: 60%;
                     padding-bottom: 10px;
-                    padding-top: 5px;
+                    padding-top: 10px;
                 }
             }
             
@@ -102,62 +97,9 @@
                 }
             }
             
-        }
+        
 
-        .clubs{
-            display: flex;
-            flex: 2;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 600px;
-            width: 100%;
-            
-            .projectCards{
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-
-                .project{
-                    display: flex;
-                    flex-direction: column;
-                    width: 200px;
-                    height: 400px;
-                    padding: 10px 10px 10px 10px;
-                    
-    
-                    .projectWrapper{
-                        padding: 10px 10px 10px 10px;
-                        background-color: $DarkBackgroundColor2;
-                        height: 90%;
-    
-                        &:hover{
-                            transform: scale(1.05);
-                        }
-    
-                        .title{
-                            font-size: 80%;
-                        }
-                        .imgContainer{
-                            width: 100px;
-                            height: 100px;
-                            img{
-                                height: 90%;
-                                width: 100%;
-                            }
-            
-                        }
-                        .description{
-            
-                        }
-                    }
-    
-                    
-                }
-            }
-            
-        }
+        
     }
 }
 
@@ -177,8 +119,7 @@
         cursor: pointer;
         cursor: hand;
         
-        
-
+    
         
     }
 }

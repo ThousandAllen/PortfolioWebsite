@@ -20,7 +20,7 @@ export default function Dog() {
                 <div className="text">
                     <p>
                         I am currently working on creating my golden retriever in Unreal Engine 4.
-                        Using Blender, I sculpted, retpologized, UV mapped, textured, rigged (using rigify), and animated the dog.
+                        Using Blender, I sculpted, re-topologized, UV mapped, textured, rigged (using rigify), and animated the dog.
                         I then brought the fbx file of the dog to Unreal Engine, however there are many problems bringing files from Blender to UE4.
                         There are issues with:
                         <ul>

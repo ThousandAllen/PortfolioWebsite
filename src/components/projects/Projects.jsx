@@ -5,6 +5,22 @@ import PopUpProject from "../popupproject/PopUpProject";
 import { SiReact } from "react-icons/si";
 
 export default function Projects() {
+
+    const MajorExperiences = [
+        {
+            title: "IHMC",
+            img: "assets/Projects/Halloween.jpg",
+            descr: "During the Summer of 2022, I was a Software Engineering Intern at IHMC's Humanoid Robotics Research Lab.", 
+            link: "IHMC",
+        },
+        {
+            title: "Advanced Vehicles Team",
+            img: "assets/Projects/Halloween.jpg",
+            descr: "IN PROGRESS: For my senior year captstonee project, I joined the Advanced Vehicles Team to help create a self driving car.", 
+            link: "AVT",
+        },
+    ];
+
     const PersonalProjects = [
         {
             title: "Halloween Light Show",
@@ -59,7 +75,35 @@ export default function Projects() {
     return (
         <div className="projects" id="projects">
             <div className="wrapper">
-                <div className="personal">
+                {<div className="experience">
+                        <div className="sectionTitle">
+                            <h1>Major Experience</h1>
+                        </div>
+                        <div className="projectCards">
+                            {MajorExperiences.map((p) => (
+                                <div className="project">
+                                    <Popup trigger={
+                                    <div className="projectWrapper">
+                                        <div className="title">
+                                            
+                                                <h2>{p.title}</h2>
+                                            
+                                        </div>
+                                        <div className="imgContainer">
+                                            <img src={p.img} alt="" />
+                                        </div>
+                                        <div className="description">
+                                            <p>{p.descr}</p>
+                                        </div>
+                                    </div>
+                                    } modal nested>
+                                        poppy
+                                    </Popup>
+                                </div>
+                            ))}
+                        </div>
+                    </div> }
+                {<div className="personal">
                     <div className="sectionTitle">
                         <h1>Personal Projects</h1>
                     </div>
@@ -94,10 +138,10 @@ export default function Projects() {
                             </div>
                         ))} 
                     </div>
-                </div>
-                {/*<div className="clubs">
+                </div>}
+                {<div className="clubs">
                     <div className="sectionTitle">
-                        <h1>Personal Projects</h1>
+                        <h1>Club Projects</h1>
                     </div>
                     <div className="projectCards">
                         {ClubProjects.map((p) => (
@@ -122,7 +166,7 @@ export default function Projects() {
                             </div>
                         ))}
                     </div>
-                </div> */}
+                </div> }
             </div>
         </div>
     )

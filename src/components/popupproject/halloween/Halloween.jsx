@@ -34,7 +34,7 @@ export default function Halloween() {
                     </p>
                 </div>
                 <div className="showvideo">
-                    <Youtube videoId="XP6S27cT-gE" className="youtube"/>
+                    <Youtube videoId="XP6S27cT-gE" className="youtube" />
                 </div>
                 
                 
