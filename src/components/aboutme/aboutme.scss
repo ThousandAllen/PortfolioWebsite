@@ -289,20 +289,6 @@
 
     }
 
-    .background{
-        height: 100%;
-        width: 100vw;
-        top: 100%;
-        transform: translateY(-100%);
-    //background-image:url('../../../public/assets/Stars.jpg');
-    background-color: $DarkBackgroundColor1;
-    background-position: center;
-    position: fixed;
-    background-repeat: no-repeat;
     
-    background-size:cover;
-
-    z-index: -1;
-    }
 
 }

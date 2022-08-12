@@ -6,54 +6,90 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $DarkBackgroundColor1;
-   
+    //background-color: $DarkBackgroundColor1;
+    
+    
+    .background{
+        //padding-top: 100px;
+        height: 100%;
+        width: 100%;
+    
+        //transform: translateY(-100%);
+        background-image:url('../public/assets/Stars.jpg');
+        //background-color: $DarkBackgroundColor1;
+         background-position:center;
+       
+         position:fixed;
+         background-repeat: no-repeat;
+        
+         background-size:cover;
+
+         z-index: -1;    
+    }
     
 
-    .arrow{
-        height: 50px;
-        position: absolute;
-        cursor: pointer;
-        cursor: hand;
+    // .arrow{
+    //     height: 50px;
+    //     position: absolute;
+    //     cursor: pointer;
+    //     cursor: hand;
 
         
 
-        &.left{
-            left:100px;
-            transform: rotate(180deg);
-        }
+    //     &.left{
+    //         left:100px;
+    //         transform: rotate(180deg);
+    //     }
 
-        &.right{
-            right: 100px;
-        }
-    }
+    //     &.right{
+    //         right: 100px;
+    //     }
+    // }
 
-    .sections{
-        
-        top: 100px;
-        height: calc(100vh - 100px);
+    .wrapmiddle{
+        height:100vh;
+        //width: 100vw;
+        width: 100%;
+        max-width: 1250px;
         display: flex;
-        justify-content:flex-start;
         align-items: center;
-        flex: 0 0 100vw;
-        position: absolute;
-        left:0;
-
+        justify-content: center;;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        padding-left: 20px;
+        padding-right: 20px;
+      
         
-       
-        
 
-        transition: all 1s ease-out;
-
-        &::-webkit-scrollbar{ //for other browsers
-            display: 100%;
-        }
-
-        > *{
-            height: calc(100vh - 100px);
-            width: 100vw;
-            transition: all .75s ease-out;
+        .sections{
             
-        }
+            top: 100px;
+            height: calc(100vh - 100px);
+            display: flex;
+            justify-content:flex-start;
+            align-items: center;
+            flex: 0 0 100vw;
+            position: absolute;
+            left:0;
+
+            
+        
+            
+
+            transition: all 1s ease-out;
+
+            &::-webkit-scrollbar{ //for other browsers
+                display: 100%;
+            }
+
+            > *{
+                height: calc(100vh - 100px);
+                width: 100vw;
+                transition: all .75s ease-out;
+                
+            }
     }
+}
+
 }

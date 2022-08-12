@@ -9,7 +9,7 @@ export default function Projects() {
     const MajorExperiences = [
         {
             title: "IHMC",
-            img: "assets/Projects/Halloween.jpg",
+            img: "assets/Projects/MeAtIHMC.png",
             descr: "During the Summer of 2022, I was a Software Engineering Intern at IHMC's Humanoid Robotics Research Lab.", 
             link: "IHMC",
         },
@@ -22,6 +22,12 @@ export default function Projects() {
     ];
 
     const PersonalProjects = [
+        {
+            title: "Yoda",
+            img: "assets/Projects/YodaBlender.jpg",
+            descr: "I am creating a Yoda animatronic.",
+            link: "Halloween",
+        },
         {
             title: "Halloween Light Show",
             img: "assets/Projects/Halloween/Halloween.jpg",
@@ -52,23 +58,29 @@ export default function Projects() {
     
     const ClubProjects = [
         {
-            title: "Game Development Club Game",
+            title: "Humanoid Robotics Club (InMoov Robot)",
             img: "assets/Projects/Halloween.jpg",
-            descr: "IN PROGRESS: I am creating my golden retriever as a fully animated/programmed dog in Blender / Unreal Engine.", 
-            link: "DogAsset",
-        },
-        {
-            title: "3D-Printted Humanoid Robot for Humanoid Robotics Club",
-            img: "assets/Projects/Halloween.jpg",
-            descr: "IN PROGRESS: I am creating my golden retriever as a fully animated/programmed dog in Blender / Unreal Engine.", 
+            descr: "Technical and Outreach Director. I focused on researching URDF files in Solidworks and setting up advertisements (website, instagram, flyers) for the club.", 
             link: "DogAsset",
         },
         {
             title: "Metal Humanoid Robot for Thon-Bot Club",
-            img: "assets/Projects/Halloween.jpg",
-            descr: "IN PROGRESS: I am creating my golden retriever as a fully animated/programmed dog in Blender / Unreal Engine.", 
+            img: "assets/Projects/THONBot.png",
+            descr: "Helped with creating the URDF file of the robot and fixing the Solidworks file.", 
             link: "DogAsset",
         },
+        {
+            title: "Robotics Club",
+            img: "assets/Projects/SumoBot.png",
+            descr: "Helped create a robot for the sumo-bot and racing competitions.", 
+            link: "DogAsset",
+        },
+        {
+            title: "Game Design Club Game",
+            img: "assets/Projects/UnityGame.png",
+            descr: "Helped with creating a 2D game in Unity.", 
+            link: "DogAsset",
+        }
     ];
 
 

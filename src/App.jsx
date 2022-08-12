@@ -20,18 +20,20 @@ function App() {
 
   return (
     <div className="app"> 
+      <div className="background">
+
+      </div>
+
       <TopBar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} currentSlide={currentSlide} setCurrentSlide={setCurrentSlide}/>
-        <div className="sections" style={{transform: `translateX(-${currentSlide*100}vw)`}}>
-          
-            {/*Currently: AboutMe=0, Projects=1, Resume=2, Contact=3*/}
-              <div><AboutMe/></div>
-              <div><Projects/></div> {/*(Personal Projects)*/}
-            {/*<Extracarriculars/>*/}
-              <div><Resume/></div>
-              <div><Contact/></div>
-          
-        </div>
+      <div className = "wrapmiddle">
+        <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} currentSlide={currentSlide} setCurrentSlide={setCurrentSlide}/>
+          <div className="sections" style={{transform: `translateX(-${currentSlide*100}vw)`}}>
+            
+              {/*Currently: AboutMe=0, Projects=1, Resume=2, Contact=3*/}
+                <div><AboutMe/></div>
+                <div><Projects/></div> 
+          </div> 
+      </div>
     </div>
   );
 }

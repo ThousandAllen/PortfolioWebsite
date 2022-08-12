@@ -16,7 +16,7 @@ export default function Menu({menuOpen, setMenuOpen, currentSlide, setCurrentSli
                     About Me
                 </li>
                 <li onClick={()=>handleClick(1)} >
-                    Projects
+                    Experience
                 </li>
                 {/*<li onClick={()=>handleClick(2)}>
                     Resume
