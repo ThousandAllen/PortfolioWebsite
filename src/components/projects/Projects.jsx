@@ -2,6 +2,7 @@ import "./projects.scss"
 import Popup from 'reactjs-popup'
 import 'reactjs-popup/dist/index.css'
 import PopUpProject from "../popupproject/PopUpProject";
+import PopUpExperience from "../popupproject/PopUpExperience"
 import { SiReact } from "react-icons/si";
 
 export default function Projects() {
@@ -109,7 +110,16 @@ export default function Projects() {
                                         </div>
                                     </div>
                                     } modal nested>
-                                        poppy
+                                        {close=>(<div className="buttonproject">
+                                    <div className="buttonwrapper">
+                                        <button className="close" onClick={close}>
+                                            &times;
+                                        </button>
+                                    </div>
+                                    
+                                    
+                                    <PopUpExperience link={p.link}/>
+                                    </div>)}
                                     </Popup>
                                 </div>
                             ))}
@@ -173,7 +183,16 @@ export default function Projects() {
                                     </div>
                                 </div>
                                 } modal nested>
-                                    poppy
+                                    {close=>(<div className="buttonproject">
+                                    <div className="buttonwrapper">
+                                        <button className="close" onClick={close}>
+                                            &times;
+                                        </button>
+                                    </div>
+                                    
+                                    
+                                    <PopUpProject link={p.link}/>
+                                    </div>)}
                                 </Popup>
                             </div>
                         ))}
