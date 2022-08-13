@@ -83,6 +83,7 @@ export default function AboutMe() {
 
     return (
         <div className="aboutme" id="aboutme">
+            <div className="backgroundcolor"></div>
             <div className="wrapper">
                 <div className="overview">
                     <div className="text">

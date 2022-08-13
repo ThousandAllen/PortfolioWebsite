@@ -74,7 +74,7 @@
             left:0;
 
             
-        
+            
             
 
             transition: all 1s ease-out;
@@ -87,6 +87,11 @@
                 height: calc(100vh - 100px);
                 width: 100vw;
                 transition: all .75s ease-out;
+
+                display: flex;
+                justify-content:center;
+          
+                
                 
             }
     }

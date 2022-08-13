@@ -4,15 +4,23 @@
 
 .aboutme{
     height: 2048px;
-    width: 100%;
-    
-
+    width: 60%;
     color: $LightTextColor1;
     font-size: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
+    .backgroundcolor{
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity: 50%;
+        z-index: 0;
+        //position: fixed;
+        
+    }
 
 
     @include mobile{
@@ -33,7 +41,6 @@
         justify-content:flex-start;
         align-items: center;
         flex-direction: column;
-        
         
         
         
