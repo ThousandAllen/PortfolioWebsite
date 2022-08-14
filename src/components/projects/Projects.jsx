@@ -87,6 +87,7 @@ export default function Projects() {
 
     return (
         <div className="projects" id="projects">
+            <div className="backgroundcolor"></div>
             <div className="wrapper">
                 {<div className="experience">
                         <div className="sectionTitle">
