@@ -89,7 +89,7 @@ export default function Projects() {
         <div className="projects" id="projects">
             <div className="backgroundcolor"></div>
             <div className="wrapper">
-                {<div className="experience">
+                {<div className="wrapSection">
                         <div className="sectionTitle">
                             <h1>Major Experience</h1>
                         </div>
@@ -126,7 +126,7 @@ export default function Projects() {
                             ))}
                         </div>
                     </div> }
-                {<div className="personal">
+                {<div className="wrapSection">
                     <div className="sectionTitle">
                         <h1>Personal Projects</h1>
                     </div>
@@ -162,7 +162,7 @@ export default function Projects() {
                         ))} 
                     </div>
                 </div>}
-                {<div className="clubs">
+                {<div className="wrapSection">
                     <div className="sectionTitle">
                         <h1>Club Projects</h1>
                     </div>

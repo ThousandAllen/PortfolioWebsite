@@ -5,7 +5,7 @@ import "../popup1.scss"
 export default function Ihmc() {
     return (
        
-        <div className="ihmc">
+        <div className="popup1">
             <div className="title">
                 <h1>Software Engineering Internship at IHMC</h1>
                 

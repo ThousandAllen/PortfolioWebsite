@@ -85,8 +85,8 @@ export default function AboutMe() {
         <div className="aboutme" id="aboutme">
             <div className="backgroundcolor"></div>
             <div className="wrapper">
-                <div className="overview">
-                    <div className="text">
+                <div className="block">
+                    <div className="textwrapper">
                         <h1 className="title">About Me:</h1>
                         <p>
                             Hello, I am a Junior in Computer Engineering at Penn State University Park with a 3.94 (/4.0) GPA. 
@@ -99,7 +99,7 @@ export default function AboutMe() {
                         <img src="assets/TopBar/ProfilePicture.jpg" alt="" />
                     </div>
                 </div>
-                <div className="experience">
+                <div className="block">
                     <div className="textwrapper">
                         <h1 className="title">Experience:</h1>
                         <p>
@@ -111,10 +111,10 @@ export default function AboutMe() {
                         </p>
                     </div>
                 </div>
-                <div className="activities">
+                <div className="block">
                     <div className = "textwrapper">
                         <h1 className="title">Activities:</h1>
-                        <div className="current">
+                        <div className="list">
                             <h3>
                                 Since Fall 2021, I have been involved in:
                             </h3>
@@ -136,7 +136,7 @@ export default function AboutMe() {
                             </ul>
                         </div>
                     
-                        <div className="past">
+                        <div className="list">
                             <h3>
                                 At Penn State Harrisburg, I was mainly invloved in:
                             </h3>
@@ -158,7 +158,7 @@ export default function AboutMe() {
                 </div>
 
                 <div className="skills">
-                    <div className="languages">
+                    <div className="skillsWrapper">
                         {skills.map((s)=>(
                             <div className="skill">
                                 {s.img}
@@ -168,9 +168,9 @@ export default function AboutMe() {
                             </div>
                         ))}
                     </div>
-                    <div className="software">
+                    <div className="skillsWrapper">
                         {Software.map((a) => (
-                            <div className="app">
+                            <div className="skill">
                                  {a.img}
                                  <div className="name">
                                     {a.name}
