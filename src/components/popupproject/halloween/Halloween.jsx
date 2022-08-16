@@ -1,10 +1,10 @@
 import React from 'react'
-import './halloween.scss'
+import '../popup1.scss'
 import Youtube from 'react-youtube'
 
 export default function Halloween() {
     return (
-        <div className="halloween">
+        <div className="popup1">
             <div className="title">
                 <h1>Halloween Light Show and Demogorgon</h1>
                 

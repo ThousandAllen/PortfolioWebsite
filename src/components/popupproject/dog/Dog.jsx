@@ -1,11 +1,11 @@
 import { AspectRatio } from '@material-ui/icons'
 import React from 'react'
-import "./dog.scss"
+import "../popup1.scss"
 
 export default function Dog() {
     return (
        
-        <div className="dog">
+        <div className="popup1">
             <div className="title">
                 <h1>Dog project</h1>
                 

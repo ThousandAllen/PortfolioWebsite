@@ -1,8 +1,8 @@
-import "./unrealprojects.scss"
+import "../popup1.scss"
 
 export default function UnrealProjects() {
     return (
-        <div className="ue4projects">
+        <div className="popup1">
             <div className="title">
                 <h1>Unreal Engine and Blender Projects</h1>
                 
