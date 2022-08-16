@@ -1,6 +1,6 @@
 import { AspectRatio } from '@material-ui/icons'
 import React from 'react'
-import "./ihmc.scss"
+import "../popup1.scss"
 
 export default function Ihmc() {
     return (
@@ -36,6 +36,26 @@ export default function Ihmc() {
                 <div className="imgContainer">
                     <img src="assets/Projects/IHMC/YOLOv5.png" alt="" style ={{aspectRatio:2}}/>
                     <figcaption>YOLOv5 in Java</figcaption>
+                </div>
+                <div className="imgContainer">
+                    <img src="assets/Projects/IHMC/CameraCalibration.png" alt="" style ={{aspectRatio:2}}/>
+                    <figcaption>Camera Calibration using OpenCV</figcaption>
+                </div>
+                <div className="imgContainer">
+                    <img src="assets/Projects/IHMC/OpticalFlow.png" alt="" style ={{aspectRatio:2}}/>
+                    <figcaption>Feature tracking using OpenCV's Optical Flow</figcaption>
+                </div>
+                <div className="imgContainer">
+                    <img src="assets/Projects/IHMC/ARView.png" alt="" style ={{aspectRatio:2}}/>
+                    <figcaption>An AR View so the camera is in the background with the point clouds infront</figcaption>
+                </div>
+                <div className="imgContainer">
+                    <img src="assets/Projects/IHMC/libGDX.png" alt="" style ={{aspectRatio:2}}/>
+                    <figcaption>Did some things using libGDX, including making some models in CAD and setting their collisions and properties in libGDX, and also creating scenes in libGDX</figcaption>
+                </div>
+                <div className="imgContainer">
+                    <img src="assets/Projects/IHMC/ManualFootstep.png" alt="" style ={{aspectRatio:2}}/>
+                    <figcaption>I created a manual footplacement UI in libGDX, which is what i did my final month at IHMC. The user can place individual footsteps and orient them individually. The footsteps also flash when out of the robot's range. </figcaption>
                 </div>
                 
             </div>

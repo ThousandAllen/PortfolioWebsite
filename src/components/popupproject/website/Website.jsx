@@ -1,8 +1,8 @@
-import "./website.scss"
+import "../popup1.scss"
 
 export default function Website() {
     return (
-        <div className="website">
+        <div className="popup1">
             <div className="title">
                 <h1>Website</h1>
                 
