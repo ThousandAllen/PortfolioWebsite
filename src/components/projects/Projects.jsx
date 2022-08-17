@@ -17,7 +17,7 @@ export default function Projects() {
         {
             title: "Advanced Vehicles Team",
             img: "assets/Projects/Halloween.jpg",
-            descr: "IN PROGRESS: For my senior year captstonee project, I joined the Advanced Vehicles Team to help create a self driving car.", 
+            descr: "IN PROGRESS: For my senior year captstone project, I joined the Advanced Vehicles Team to help create a self driving car.", 
             link: "AVT",
         },
     ];
