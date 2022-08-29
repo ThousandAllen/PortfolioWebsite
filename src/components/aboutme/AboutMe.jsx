@@ -1,9 +1,14 @@
 import "./aboutme.scss";
-import {SiCplusplus, SiC, SiPython, SiJava, SiXilinx, SiReact, SiSass, SiBlender, SiLinux, SiGithub, SiUnrealengine, SiUnity } from "react-icons/si";
+import {SiCplusplus, SiC, SiPython, SiJava, SiXilinx, SiReact, SiSass, SiBlender, SiLinux, SiGithub, SiUnrealengine, SiUnity, SiOpencv } from "react-icons/si";
 
 export default function AboutMe() {
 
     const skills = [
+        {
+            img: <SiJava size={90} className="icon"/>,
+            name: "Java",
+            desc: "I used Java in CMPSC221, which was a class focused on creating Java GUI related projects.",
+        },
         {
             img: <SiCplusplus size={90} className="icon"/>,
             name: "C++",
@@ -19,11 +24,7 @@ export default function AboutMe() {
             name: "Python",
             desc: "I have used python for several smaller projects, such as a website scraper, programming using blender's python API, a divider and multiplier for CMPEN331, and high school assignments.",
         },
-        {
-            img: <SiJava size={90} className="icon"/>,
-            name: "Java",
-            desc: "I used Java in CMPSC221, which was a class focused on creating Java GUI related projects.",
-        },
+        
         {
             img: <SiXilinx size={90} className="icon"/>,
             name: "Vivado- Verilog",
@@ -49,6 +50,11 @@ export default function AboutMe() {
     ];
 
     const Software = [
+        {
+            img: <SiOpencv size={90} className="icon"/>,
+            name: "OpenCV",
+            desc: "",
+        },
         {
             img: <SiBlender size={90} className="icon"/>,
             name: "Blender",
@@ -89,9 +95,10 @@ export default function AboutMe() {
                     <div className="textwrapper">
                         <h1 className="title">About Me:</h1>
                         <p>
-                            Hello, I am a Junior in Computer Engineering at Penn State University Park with a 3.94 (/4.0) GPA. 
+                            Hello, I am a Senior in Computer Engineering at Penn State University Park with a 3.80 (/4.0) GPA. 
                             I am an active student at Penn State; being in many major-related and non-major-related extracarricular activities. 
-                            I love programming software, and I find hardware to be really interesting too! 
+                            I am very motivated in learning software and have interest mainly in: object detecton, opencv, lidar, simulations, ROS.
+                            I am also interested in embedded systems, though I don't have as much experience in that other than in my classes. 
                             
                         </p>
                     </div>
@@ -103,11 +110,14 @@ export default function AboutMe() {
                     <div className="textwrapper">
                         <h1 className="title">Experience:</h1>
                         <p>
+                            During the Summer of 2022, I worked at IHMC's huamnoid robotics lab. The lab focused on walking robots where I mainly researched
+                            using the Atlas robot and the robot they were developing, Nadia. 
+                            At the lab, I implemented YOLOv5 object detection, did several things using OpenCV, and made some high level UI features.
+                            One of the UI features I implemented was manual foot placement in the new libGDX UI, which is very important for everyone running tests on the robots and will likely be one of the most used features available in the UI.
+                        </p>
+                        <p>
                             During my sophmore year, I worked as a peer tutor. 
                             I helped with Calculus 1, Computer Science 1-2, Physics 1-2, and Computer Engineering: Intro to Digital Systems.
-                            <br/>
-                            During the summer of 2017, I worked as a busser at a local ice cream shop. 
-                            At which I mainly cleaned tables, cleaned dishes, and helped guests with any problems or questions.
                         </p>
                     </div>
                 </div>

@@ -1,8 +1,9 @@
 import UnrealProjects from './unrealprojects/UnrealProjects'
 import Ihmc from './ihmc/Ihmc'
+import Avt from './avt/Avt'
 import './popupproject.scss'
 
-export default function PopUpProject({link}) {
+export default function PopUpExperience({link}) {
     return (
         <div>
             <div className="popupproject">
@@ -11,7 +12,7 @@ export default function PopUpProject({link}) {
                         {
                             {
                                 "IHMC": <Ihmc/>,
-                                "UnrealProjects": <UnrealProjects/>,
+                                "AVT": <Avt/>,
                             }[link] 
                         }
                     </div>
