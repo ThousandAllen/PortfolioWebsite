@@ -80,7 +80,7 @@ export default function Projects() {
             title: "Game Design Club Game",
             img: "assets/Projects/UnityGame.png",
             descr: "Helped with creating a 2D game in Unity.", 
-            link: "DogAsset",
+          link: "DogAsset",
         }
     ];
 
@@ -192,7 +192,7 @@ export default function Projects() {
                                     </div>
                                     
                                     
-                                    <PopUpProject link={p.link}/>
+                                    {/*<PopUpProject link={p.link}/>*/}
                                     </div>)}
                                 </Popup>
                             </div>
