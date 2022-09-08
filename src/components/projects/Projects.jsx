@@ -16,7 +16,7 @@ export default function Projects() {
         },
         {
             title: "Advanced Vehicles Team",
-            img: "assets/Projects/Halloween.jpg",
+            img: "assets/Projects/AVT.jpg",
             descr: "IN PROGRESS: For my senior year captstone project, I joined the Advanced Vehicles Team to help create a self driving car.", 
             link: "AVT",
         },
@@ -27,7 +27,7 @@ export default function Projects() {
             title: "Yoda",
             img: "assets/Projects/YodaBlender.jpg",
             descr: "I am creating a Yoda animatronic.",
-            link: "Halloween",
+            link: "Yoda",
         },
         {
             title: "Halloween Light Show",

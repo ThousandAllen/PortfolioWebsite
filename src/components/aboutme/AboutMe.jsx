@@ -97,7 +97,7 @@ export default function AboutMe() {
                         <p>
                             Hello, I am a Senior in Computer Engineering at Penn State University Park with a 3.80 (/4.0) GPA. 
                             I am an active student at Penn State; being in many major-related and non-major-related extracarricular activities. 
-                            I am very motivated in learning software and have interest mainly in: object detecton, opencv, lidar, simulations, ROS.
+                            I am very motivated in learning software and have interest mainly in controls, simulation, and object detection.
                             I am also interested in embedded systems, though I don't have as much experience in that other than in my classes. 
                             
                         </p>
@@ -126,7 +126,7 @@ export default function AboutMe() {
                         <h1 className="title">Activities:</h1>
                         <div className="list">
                             <h3>
-                                Since Fall 2021, I have been involved in:
+                                Since moving to Penn State University Park in Fall 2021, I have been involved in:
                             </h3>
                         
                             <ul>
