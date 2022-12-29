@@ -45,7 +45,7 @@
         display: flex;
         flex:4;
         justify-content:flex-start;
-        align-items: center;
+        align-items:center !important;
         flex-direction: column;
         
         position: absolute;
@@ -64,6 +64,7 @@
             flex-direction: row;
             width: 100%;
             justify-content: space-between;
+            
             
             
             
@@ -99,6 +100,8 @@
                     }
                 }
 
+                
+
             }
 
             .imgContainer{
@@ -121,6 +124,49 @@
 
                 }
             }
+        }
+
+        .pageButton{
+            padding-bottom: 30px;
+            //height: 300px;
+            //max-height: 300px;
+            align-items: center;
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+            width: 100%;
+            justify-content: center;
+           
+            
+        
+            cursor: pointer; 
+            cursor: hand;         
+            font-weight: bolder;
+            font-size: larger;
+            color: rgb(42, 116, 213);
+            
+            
+            
+            
+            
+            .textwrapper{
+                //width: 70%;
+                background-color: $DarkBackgroundColor2;
+                padding: 20px 20px 20px 20px;
+              
+
+                @include mobile{
+                    width: 100%;
+                }
+
+              
+
+
+                
+
+            }
+
+            
         }
 
         

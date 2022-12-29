@@ -1,13 +1,24 @@
 import "./aboutme.scss";
-import {SiCplusplus, SiC, SiPython, SiJava, SiXilinx, SiReact, SiSass, SiBlender, SiLinux, SiGithub, SiUnrealengine, SiUnity, SiOpencv } from "react-icons/si";
+import {SiCplusplus, SiC, SiPython, SiJava, SiXilinx, SiReact, SiSass, SiBlender, SiLinux, SiGithub, SiUnrealengine, SiUnity, SiOpencv, SiDassaultsystemes } from "react-icons/si";
+import { FormatAlignCenter } from "@material-ui/icons";
 
-export default function AboutMe() {
+export default function AboutMe({menuOpen, setMenuOpen, currentSlide, setCurrentSlide}) {
+
+    const handleClick = (page)=>{
+        setMenuOpen(false);
+        setCurrentSlide(page);
+    }
 
     const skills = [
         {
+            img: <span className="icon word" >MAT</span>,
+            name: "MATLAB",
+            desc: "",
+        },
+        {
             img: <SiJava size={90} className="icon"/>,
             name: "Java",
-            desc: "I used Java in CMPSC221, which was a class focused on creating Java GUI related projects.",
+            desc: "I used Java at IHMC and in CMPSC221, which was a class focused on creating Java GUI related projects.",
         },
         {
             img: <SiCplusplus size={90} className="icon"/>,
@@ -31,8 +42,8 @@ export default function AboutMe() {
             desc: "Verilog was used in CMPEN331, where we created a Verilog implementation of a pipelined processor with branch prediction and caching.",
         },
         {
-            img: <span className="icon word" >MIPS</span>,
-            name: "MIPS assembly",
+            img: <span className="icon word" >AS</span>,
+            name: "Assembly",
             desc: "MIPS was the assembly language used in CMPEN331 to explain how processors work, and a couple MIPS assignments were completed.",
         },
         {
@@ -83,6 +94,11 @@ export default function AboutMe() {
             desc: "Username: ThousandAllen",
 
         },
+        {
+            img: <SiDassaultsystemes size={90} className="icon"/>,
+            name: "SolidWorks",
+            desc: "",
+        },
         
 
     ];
@@ -95,10 +111,9 @@ export default function AboutMe() {
                     <div className="textwrapper">
                         <h1 className="title">About Me:</h1>
                         <p>
-                            Hello, I am a Senior in Computer Engineering at Penn State University Park with a 3.80 (/4.0) GPA. 
+                            Hello, I am a Senior in Computer Engineering at Penn State University Park with a 3.71 (/4.0) GPA. 
                             I am an active student at Penn State; being in many major-related and non-major-related extracarricular activities. 
-                            I am very motivated in learning software and have interest mainly in controls, simulation, and object detection.
-                            I am also interested in embedded systems, though I don't have as much experience in that other than in my classes. 
+                            I am very motivated in learning software and have interest mainly in simulation, robotics, perception, and embedded systems. 
                             
                         </p>
                     </div>
@@ -106,66 +121,37 @@ export default function AboutMe() {
                         <img src="assets/TopBar/ProfilePicture.jpg" alt="" />
                     </div>
                 </div>
+                
+                <div className="pageButton">
+                    <div className="textwrapper">
+                        <div className = "PageButton" onClick={()=>handleClick(1)} >
+                            Click to see Experience and Projects
+                        </div>
+                    </div>
+                </div>
+                
+               
+
                 <div className="block">
                     <div className="textwrapper">
-                        <h1 className="title">Experience:</h1>
+                        <h1 className="title">Summary:</h1>
                         <p>
-                            During the Summer of 2022, I worked at IHMC's huamnoid robotics lab. The lab focused on walking robots where I mainly researched
-                            using the Atlas robot and the robot they were developing, Nadia. 
-                            At the lab, I implemented YOLOv5 object detection, did several things using OpenCV, and made some high level UI features.
-                            One of the UI features I implemented was manual foot placement in the new libGDX UI, which is very important for everyone running tests on the robots and will likely be one of the most used features available in the UI.
+                        My passion for Computer Engineering started when I created an arduino-based Halloween light show themed to the Netflix show Stranger Things. 
+                        I then became interested in video game developement and participated in some game-jams using Unreal Engine 4 and also helped create a 2D Unity game in the PSU game design club.
+                        I then became interested in robotics/simulation in the PSU Robotics Club and PSU Humanoid Robotics Club, which led to me interning at IHMC's Humanoid Robotics Lab working on perception code.
+                        For my senior year capstone project, I worked in the PSU AVT's Simulation Department doing MATLAB/Simulink Collision Avoidance using MPC.
                         </p>
                         <p>
-                            During my sophmore year, I worked as a peer tutor. 
-                            I helped with Calculus 1, Computer Science 1-2, Physics 1-2, and Computer Engineering: Intro to Digital Systems.
+                            I am also interested in the Themed Entertainment industry. I have attended IAAPA 2022, the TMU Thrill Design Competition 2022, 
+                            and currently participating in the Iowa State Ride Engineering Competition 2023.
+                            I have additionally been creating an animatronic Yoda in my free time.
+                        </p>
+                        <p>
+                            Some of my hobbies include bicycling, walking/running, going to theme parks, learning more software, and learning mechanical design (Fusion/Solidworks).
                         </p>
                     </div>
                 </div>
-                <div className="block">
-                    <div className = "textwrapper">
-                        <h1 className="title">Activities:</h1>
-                        <div className="list">
-                            <h3>
-                                Since moving to Penn State University Park in Fall 2021, I have been involved in:
-                            </h3>
-                        
-                            <ul>
-                                <li>PSU Humanoid Robotics Club - Creating a life-size humanoid robot and simulating using ROS and Unity</li>
-                                <li>PSU Robotics Club - Creating a robot for a tsumo-style robotic competition</li>
-                                <li>PSU Game Developement Club - Creating a 2D video game using the Unity Engine</li>
-                                <li>PSU IEEE - Electrical Engineering Club - </li>
-                                <li>Numerous Social Clubs:
-                                    <ul>
-                                        <li>Nittanyville</li>
-                                        <li>Theme Park Engineering Group</li>
-                                        <li>French Club</li>
-                                        <li>Monty Python Society</li>
-                                        <li>Harry Potter Club</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    
-                        <div className="list">
-                            <h3>
-                                At Penn State Harrisburg, I was mainly invloved in:
-                            </h3>
-                        
-                            <ul>
-                                <li>Penn State Harrisburg Coding Club (2021)</li>
-                                <li>Game development marathons:
-                                    <ul>
-                                        <li>AI and Games Jam 2021 </li> 
-                                        <li>Mix and Game Jam 2020</li>
-                                    </ul>
-                                    
-                                </li>
-                                
-                            </ul>
-                        </div>
-                    </div>
-                    
-                </div>
+                
 
                 <div className="skills">
                     <div className="skillsWrapper">

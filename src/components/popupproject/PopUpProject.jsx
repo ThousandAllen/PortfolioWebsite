@@ -1,3 +1,4 @@
+import Yoda from './yoda/Yoda'
 import Halloween from './halloween/Halloween'
 import UnrealProjects from './unrealprojects/UnrealProjects'
 import Dog from './dog/Dog'
@@ -12,6 +13,7 @@ export default function PopUpProject({link}) {
                     <div>
                         {
                             {
+                                "Yoda": <Yoda/>,
                                 "Halloween": <Halloween/>,
                                 "UnrealProjects": <UnrealProjects/>,
                                 "DogAsset": <Dog/>,

@@ -30,7 +30,7 @@ function App() {
           <div className="sections" style={{transform: `translateX(-${currentSlide*100}vw)`}}>
             
               {/*Currently: AboutMe=0, Projects=1, Resume=2, Contact=3*/}
-                <div><AboutMe/></div>
+                <div><AboutMe menuOpen={menuOpen} setMenuOpen={setMenuOpen} currentSlide={currentSlide} setCurrentSlide={setCurrentSlide} /> </div>
                 <div><Projects/></div> 
           </div> 
       </div>

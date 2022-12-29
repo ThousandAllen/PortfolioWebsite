@@ -25,7 +25,7 @@ export default function Projects() {
     const PersonalProjects = [
         {
             title: "Yoda",
-            img: "assets/Projects/YodaBlender.jpg",
+            img: "assets/Projects/Yoda/Latex.jpeg",
             descr: "I am creating a Yoda animatronic.",
             link: "Yoda",
         },
@@ -126,6 +126,43 @@ export default function Projects() {
                             ))}
                         </div>
                     </div> }
+                    {/* {<div className="wrapSection">
+                        <div className="sectionTitle">
+                            <h1>Competitions</h1>
+                        </div>
+                        <div className="projectCards">
+                            {MajorExperiences.map((p) => (
+                                <div className="project">
+                                    <Popup trigger={
+                                    <div className="projectWrapper">
+                                        <div className="title">
+                                            
+                                                <h2>{p.title}</h2>
+                                            
+                                        </div>
+                                        <div className="imgContainer">
+                                            <img src={p.img} alt="" />
+                                        </div>
+                                        <div className="description">
+                                            <p>{p.descr}</p>
+                                        </div>
+                                    </div>
+                                    } modal nested>
+                                        {close=>(<div className="buttonproject">
+                                    <div className="buttonwrapper">
+                                        <button className="close" onClick={close}>
+                                            &times;
+                                        </button>
+                                    </div>
+                                    
+                                    
+                                    <PopUpCompetitions link={p.link}/>
+                                    </div>)}
+                                    </Popup>
+                                </div>
+                            ))}
+                        </div>
+                    </div> } */}
                 {<div className="wrapSection">
                     <div className="sectionTitle">
                         <h1>Personal Projects</h1>
